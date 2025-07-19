@@ -16,6 +16,14 @@
             "dest": "public/index.html"
         },
         {
+            "src": "/style.css",
+            "dest": "public/style.css"
+        },
+        {
+            "src": "/script.js",
+            "dest": "public/script.js"
+        },
+        {
             "src": "/(.*)",
             "dest": "index.js"
         }
