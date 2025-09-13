@@ -19,6 +19,21 @@ h1 {
   margin-bottom: 20px;
 }
 
+.chat-controls {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+#clear-chat {
+  background-color: #dc3545;
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+#clear-chat:hover {
+  background-color: #c82333;
+}
+
 .chat-box {
   height: 400px;
   overflow-y: auto;
