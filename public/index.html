@@ -8,17 +8,29 @@
     </head>
     <body>
         <div class="container">
-            <h1>Gemini AI Chatbot</h1>
+            <div class="header">
+                <h1>Gemini AI Chatbot</h1>
+                <div class="subtitle">Powered by Google's Gemini AI</div>
+            </div>
             <div class="chat-controls">
+                <div class="session-info" id="session-info">Session: Loading...</div>
                 <button id="clear-chat" onclick="clearChat()">Clear Chat</button>
             </div>
-            <div id="chat-box" class="chat-box"></div>
-            <form id="chat-form">
-                <input type="text" id="user-input"
-                    placeholder="Type your message..." autocomplete="off"
-                    required />
-                <button type="submit">Send</button>
-            </form>
+            <div id="chat-box" class="chat-box">
+                <div class="empty-state">
+                    <div class="empty-state-icon">💬</div>
+                    <div class="empty-state-text">Start a conversation</div>
+                    <div class="empty-state-subtext">Ask me anything and I'll help you out!</div>
+                </div>
+            </div>
+            <div class="input-container">
+                <form id="chat-form">
+                    <input type="text" id="user-input"
+                        placeholder="Type your message..." autocomplete="off"
+                        required />
+                    <button type="submit">Send</button>
+                </form>
+            </div>
         </div>
         <script src="script.js"></script>
     </body>
