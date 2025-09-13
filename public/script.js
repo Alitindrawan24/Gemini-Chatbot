@@ -95,3 +95,5 @@ function displayMessage(message, sender, isTemporary) {
     messageDiv.textContent = message;
     chatBox.appendChild(messageDiv);
     chatBox.scrollTop = chatBox.scrollHeight;
+
+}
